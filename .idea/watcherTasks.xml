@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectTasksOptions">
+    <enabled-global>
+      <option value="Vue -&gt; Prettier" />
+      <option value="Js -&gt; Prettier" />
+      <option value="Css -&gt; Prettier" />
+      <option value="Scss -&gt; Prettier" />
+      <option value="Sass -&gt; Prettier" />
+      <option value="Json -&gt; Prettier" />
+      <option value="Json5 -&gt; Prettier" />
+      <option value="Json lines -&gt; Prettier" />
+    </enabled-global>
+  </component>
+</project>
