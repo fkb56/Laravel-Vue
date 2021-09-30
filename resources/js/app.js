@@ -1,10 +1,9 @@
 // Import modules...
 import { createApp, h } from "vue";
-// import "vite/dynamic-import-polyfill";
-
-import "./bootstrap";
+// import "@vite/dynamic-import-polyfill"
 
 import "../css/app.css";
+import "./bootstrap.js";
 
 import App from "./Home.vue";
 // import VueAxios from "vue-axios";
@@ -21,9 +20,9 @@ const el = document.getElementById("app");
 // });
 
 createApp({
-    render: () => h(App),
+	render: () => h(App),
 })
-    // .use(router)
-    // .use(store)
-    // .use(VueAxios, axios)
-    .mount(el);
+	// .use(router)
+	// .use(store)
+	// .use(VueAxios, axios)
+	.mount(el);
