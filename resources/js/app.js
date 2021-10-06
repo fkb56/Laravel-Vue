@@ -1,28 +1,24 @@
-// Import modules...
 import { createApp, h } from "vue";
-// import "@vite/dynamic-import-polyfill"
-
+import App from "./Pages/App.vue";
+import { createWebHistory, createRouter } from "vue-router";
+// import VueAxios from "vue-axios";
+// import axios from "axios";
+import { routes } from "./routes";
+import store from "./Store/app.js";
 import "../css/app.css";
 import "./bootstrap.js";
 
-import App from "./Home.vue";
-// import VueAxios from "vue-axios";
-// import { createWebHistory, createRouter } from "vue-router";
-// import axios from "axios";
-// import { routes } from "./routes";
-// import { store } from "./store";
-
 const el = document.getElementById("app");
 
-// const router = createRouter({
-//     routes: routes,
-//     history: createWebHistory(),
-// });
+const router = createRouter({
+	routes: routes,
+	history: createWebHistory(),
+});
 
 createApp({
 	render: () => h(App),
 })
-	// .use(router)
-	// .use(store)
+	.use(router)
+	.use(store)
 	// .use(VueAxios, axios)
 	.mount(el);
